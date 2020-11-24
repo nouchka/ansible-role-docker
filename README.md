@@ -1,6 +1,6 @@
 # Ansible Role: Docker
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-docker.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-docker)
+[![CI](https://github.com/geerlingguy/ansible-role-docker/workflows/CI/badge.svg?event=push)](https://github.com/geerlingguy/ansible-role-docker/actions?query=workflow%3ACI)
 
 An Ansible Role that installs [Docker](https://www.docker.com) on Linux.
 
@@ -28,7 +28,7 @@ You can control whether the package is installed, uninstalled, or at the latest 
 Variables to control the state of the `docker` service, and whether it should start on boot. If you're installing Docker inside a Docker container without systemd or sysvinit, you should set these to `stopped` and set the enabled variable to `no`.
 
     docker_install_compose: true
-    docker_compose_version: "1.25.4"
+    docker_compose_version: "1.26.0"
     docker_compose_path: /usr/local/bin/docker-compose
     docker_compose_completion_path: /etc/bash_completion.d/docker-compose
 
